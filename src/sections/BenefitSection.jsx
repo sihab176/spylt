@@ -1,5 +1,6 @@
 "use client";
 import ClipPathTitle from "@/components/ClipPathTitle";
+import VideoPinSection from "@/components/VideoPinSection";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
@@ -13,7 +14,7 @@ const BenefitSection = () => {
         start: "top 60% ",
         end: "20% top",
         scrub: 1,
-        markers:true
+        // markers:true
       },
     });
     revealTl.to(".benefit-section .first-title", {
@@ -44,14 +45,14 @@ const BenefitSection = () => {
 
   return (
     <section className="benefit-section  min-h-dvh bg-[#222123] overflow-hidden relative;">
-      <div className="container mx-auto pt-20">
+      <div className="container mx-auto ">
         <div className="col-center flex flex-col justify-center items-center text-white">
           <p className="text-center">
             Unlock the Advantages: <br />
             Explore the Key Benefits of Choosing SPYLT
           </p>
 
-          <div className="mt-20 col-center text-center">
+          <div className="mt-20 col-center text-center ">
             <ClipPathTitle
               title={"Shelf stable"}
               color={"#faeade"}
@@ -88,13 +89,15 @@ const BenefitSection = () => {
             />
           </div>
 
-          <div className="md:mt-0 mt-10 mb-5">
+          <div className="md:mt-0 mt-10 ">
             <p>And much more ...</p>
           </div>
         </div>
       </div>
 
-      <div className="relative overlay-box h-96"></div>
+      <div className="relative overlay-box h-full">
+        <VideoPinSection/>
+      </div>
     </section>
   );
 };
