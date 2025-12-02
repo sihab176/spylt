@@ -1,5 +1,6 @@
 "use client"
 import Navbar from "@/components/Navbar/Navbar";
+import FlavorSection from "@/sections/FlavorSection";
 import Hero from "@/sections/Hero";
 import MessageSection from "@/sections/MessageSection";
 import { useGSAP } from "@gsap/react";
@@ -26,13 +27,14 @@ export default function Home() {
         <Navbar/>
       </section>
         <div id="smooth-wrapper">
-           <div id="smooth-content">
-            <Hero/>
-         <MessageSection/>
-  <div className="h-dvh bg-amber-400">
+          <div id="smooth-content">
+          <Hero/>
+          <MessageSection/>
+          <FlavorSection/>
+          <div className="h-dvh">
 
-         </div>
-           </div>
+          </div>
+          </div>
         </div>
 
       
