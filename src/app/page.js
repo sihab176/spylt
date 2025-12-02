@@ -1,5 +1,6 @@
 "use client"
 import Navbar from "@/components/Navbar/Navbar";
+import BenefitSection from "@/sections/BenefitSection";
 import FlavorSection from "@/sections/FlavorSection";
 import Hero from "@/sections/Hero";
 import MessageSection from "@/sections/MessageSection";
@@ -33,6 +34,7 @@ export default function Home() {
           <MessageSection/>
           <FlavorSection/>
           <NutritionSection/>
+          <BenefitSection/>
           <div className="h-dvh">
 
           </div>
