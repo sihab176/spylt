@@ -5,6 +5,7 @@ import FlavorSection from "@/sections/FlavorSection";
 import Hero from "@/sections/Hero";
 import MessageSection from "@/sections/MessageSection";
 import NutritionSection from "@/sections/NutritionSection";
+import TestimonialSection from "@/sections/TestimonialSection";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
@@ -35,6 +36,7 @@ export default function Home() {
           <FlavorSection/>
           <NutritionSection/>
           <BenefitSection/>
+          <TestimonialSection/>
           <div className="h-dvh">
 
           </div>

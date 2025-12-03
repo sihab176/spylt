@@ -66,7 +66,7 @@ const FlavorSlider = () => {
   })
 
   return (
-    <div ref={sliderRef}  className="slider-wrapper bg-[#f7ddcc] lg:h-dvh min-h-dvh md:min-h-fit w-full mt-0 md:mt-20 xl:mt-0">
+    <div ref={sliderRef}  className="slider-wrapper  bg-[#f7ddcc] lg:h-dvh min-h-dvh md:min-h-fit w-full mt-0 md:mt-20 xl:mt-0">
       <div className=" flavors  h-full w-full flex md:flex-row flex-col items-center 2xl:gap-72 lg:gap-52 md:gap-24 gap-7 flex-nowrap">
         {flavorlists.map((flavor) => (
           <div
@@ -76,25 +76,25 @@ const FlavorSlider = () => {
             <Image
               src={`/images/${flavor.color}-bg.svg`}
               alt="flavor name"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               className="absolute bottom-0"
             />
 
             <Image
               src={`/images/${flavor.color}-drink.webp`}
               alt="flavor drink"
-              width={200}
+              width={340}
               height={200}
-              className="drinks absolute left-1/2 -translate-x-1/2 bottom-0 md:h-80 h-80"
+              className="drinks absolute left-1/2 -translate-x-1/2 bottom-0 lg:h-[470px] md:h-96 h-80"
             />
 
             <Image
               src={`/images/${flavor.color}-elements.webp`}
               alt="flavor elements"
-              width={200}
-              height={200}
-              className="elements  absolute md:top-32 md:bottom-auto bottom-10 w-[500px]"
+              width={500}
+              height={500}
+              className="elements  absolute md:top-16 md:bottom-auto bottom-10 w-[600px]"
             />
 
             <h1 className="absolute md:bottom-10 md:left-10 bottom-5 left-5 text-milk md:text-4xl text-3xl font-semibold uppercase tracking-tighter">{flavor.name}</h1>
