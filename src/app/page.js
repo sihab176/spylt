@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import BenefitSection from "@/sections/BenefitSection";
 import FlavorSection from "@/sections/FlavorSection";
+import FooterSection from "@/sections/FooterSection";
 import Hero from "@/sections/Hero";
 import MessageSection from "@/sections/MessageSection";
 import NutritionSection from "@/sections/NutritionSection";
@@ -37,9 +38,10 @@ export default function Home() {
           <NutritionSection/>
           <BenefitSection/>
           <TestimonialSection/>
-          <div className="h-dvh">
+          <FooterSection/>
+          {/* <div className="h-dvh">
 
-          </div>
+          </div> */}
           </div>
         </div>
 
